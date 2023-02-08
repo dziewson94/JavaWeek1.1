@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76cea949-3904-4aa7-838f-b503e5d16431" name="Changes" comment="Java Week 1.1 task from agenda added.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/main/Main.java" afterDir="false" />
+    <list default="true" id="76cea949-3904-4aa7-838f-b503e5d16431" name="Changes" comment="Package update.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/polynominal/Inequality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/inequality/Inequality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/polynominal/InequalityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/inequality/InequalityGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/polynominal/InequalityLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/inequality/InequalityLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/polynominal/InequalitySign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sii/academy/javaweek1/inequality/InequalitySign.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +109,20 @@
       <option name="presentableId" value="Default" />
       <updated>1675801389045</updated>
     </task>
+    <task id="LOCAL-00001" summary="Java Week 1.1 task from agenda added.">
+      <created>1675872719015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675872719015</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Java Week 1.1 code" />
     <MESSAGE value="Java Week 1.1 task from agenda added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Java Week 1.1 task from agenda added." />
+    <MESSAGE value="Package update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Package update." />
   </component>
 </project>

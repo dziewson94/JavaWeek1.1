@@ -1,4 +1,4 @@
-package com.sii.academy.javaweek1.polynominal;
+package com.sii.academy.javaweek1.inequality;
 
 import java.util.List;
 

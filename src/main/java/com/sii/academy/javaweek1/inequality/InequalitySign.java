@@ -1,4 +1,4 @@
-package com.sii.academy.javaweek1.polynominal;
+package com.sii.academy.javaweek1.inequality;
 
 public enum InequalitySign {
     MORE(">"),

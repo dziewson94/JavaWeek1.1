@@ -66,7 +66,7 @@ public class Main {
     }
 
     private static int parseArg(String arg, String message, boolean firstVal) {
-        int val ;
+        int val;
         try {
             val = Integer.parseInt(arg);
 
