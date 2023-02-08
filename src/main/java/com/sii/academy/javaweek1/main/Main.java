@@ -1,5 +1,7 @@
 package com.sii.academy.javaweek1.main;
 
+import com.sii.academy.javaweek1.inequality.InequalityGenerator;
+
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -9,10 +11,10 @@ public class Main {
 
 
     public static void main(String[] args) {
-        /*for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= 3; i++) {
             System.out.println(InequalityGenerator.generateInequality(i));
             System.out.println("-------------------------------------------------------");
-        }*/
+        }
         readArgs(args);
         int numberToGuess = ThreadLocalRandom.current().nextInt(lowerBoundary, upperBoundary + 1);
         System.out.println("Winning number has been chosen");

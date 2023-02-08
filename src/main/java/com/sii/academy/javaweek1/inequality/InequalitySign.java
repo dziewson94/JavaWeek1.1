@@ -6,7 +6,7 @@ public enum InequalitySign {
     MORE_EQ(">="),
     LESS_EQ("<=");
 
-    private String sing;
+    private final String sing;
 
     InequalitySign(String sign) {
         this.sing = sign;

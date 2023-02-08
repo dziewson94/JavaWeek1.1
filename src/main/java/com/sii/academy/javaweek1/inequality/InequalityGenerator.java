@@ -49,15 +49,12 @@ public class InequalityGenerator {
     }
 
     private static String getVariableName(int index) {
-        switch (index) {
-            case 0:
-                return "x";
-            case 1:
-                return "y";
-            case 2:
-                return "z";
-        }
-        return null;
+        return switch (index) {
+            case 0 -> "x";
+            case 1 -> "y";
+            case 2 -> "z";
+            default -> null;
+        };
     }
 
 }

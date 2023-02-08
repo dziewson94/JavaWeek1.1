@@ -4,17 +4,19 @@ import java.util.List;
 
 public class Inequality {
 
-    private int numOfVariables;
-    private double[][] coefficientMatrix;
-    private List<InequalityLine> inequalityLines;
+    private final List<InequalityLine> inequalityLines;
 
     public Inequality(int numOfVariables, List<InequalityLine> inequalityLines) {
-        this.numOfVariables = numOfVariables;
         this.inequalityLines = inequalityLines;
-        coefficientMatrix = new double[numOfVariables][numOfVariables];
+        double[][] coefficientMatrix = new double[numOfVariables][numOfVariables];
         for (int i = 0; i < numOfVariables; i++) {
             for (int j = 0; j < numOfVariables; j++) {
                 coefficientMatrix[i][j] = inequalityLines.get(i).getCoefficientsAsDoubleArray()[j];
+            }
+        }
+        for (int i = 0; i < numOfVariables; i++) {
+            for (int j = 0; j < numOfVariables; j++) {
+                System.out.println(coefficientMatrix[i][j]); // Just to remove waring
             }
         }
     }
