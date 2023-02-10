@@ -11,23 +11,23 @@ public class Main {
 
 
     public static void main(String[] args) {
-        for (int i = 1; i <= 3; i++) {
-            System.out.println(InequalityGenerator.generateInequality(i));
-            System.out.println("-------------------------------------------------------");
-        }
-        readArgs(args);
-        int numberToGuess = ThreadLocalRandom.current().nextInt(lowerBoundary, upperBoundary + 1);
-        System.out.println("Winning number has been chosen");
-        System.out.printf("Please provide number between %d and %d inclusive%n", lowerBoundary, upperBoundary);
-        int tryNum = 1;
-        while (tryNum <= 5) {
-            int userInput;
+//        for (int i = 1; i <= 3; i++) {
+//            System.out.println(InequalityGenerator.generateInequality(i));
+//            System.out.println("-------------------------------------------------------");
+//        }
+//        readArgs(args);
+//        int numberToGuess = ThreadLocalRandom.current().nextInt(lowerBoundary, upperBoundary + 1);
+//        System.out.println("Winning number has been chosen");
+//        System.out.printf("Please provide number between %d and %d inclusive%n", lowerBoundary, upperBoundary);
+//        int tryNum = 1;
+//        while (tryNum <= 5) {
+//            int userInput;
+//            userInput = getUserInput();
+//            if (verifyProvidedInput(numberToGuess, tryNum, userInput)) break;
+//            tryNum++;
+//        }
 
-            userInput = getUserInput();
-            if (verifyProvidedInput(numberToGuess, tryNum, userInput)) break;
-            tryNum++;
-        }
-
+        System.out.println(tokenGenerator(15));
     }
 
     private static boolean verifyProvidedInput(int numberToGuess, int tryNum, int userInput) {
@@ -90,4 +90,19 @@ public class Main {
         }
         System.out.printf("Boundaries:%nLower:%d%nUpper:%d%n", lowerBoundary, upperBoundary);
     }
+
+    private static String tokenGenerator(int length) {
+        if (length != 5 && length != 10 && length != 15) throw new NumberFormatException("Invalid token length");
+        int lowerASCIBoundary = 0;
+        int upperASCIBoundary = 127;
+        StringBuilder tokenBuilder = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            char charToAppend = (char) ThreadLocalRandom.current().nextInt(lowerASCIBoundary, upperASCIBoundary);
+            tokenBuilder.append(charToAppend);
+        }
+        return tokenBuilder.toString();
+
+    }
+
+
 }
